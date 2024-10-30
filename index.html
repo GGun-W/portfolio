@@ -20,19 +20,19 @@
 </head>
 <body>
     <!-- Header -->
-     <header>
-        <div>
-            <img src="./images/aa-modified.ico" alt="logo">
-            <h1><a href="#">Gunwoo</a></h1>
+     <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__img" src="./images/aa-modified.ico" alt="logo">
+            <h1 class="header__logo__title"><a href="#">Gunwoo</a></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">홈으로</a></li>
-                <li><a href="#about">나</a></li>
-                <li><a href="#skills">역량</a></li>
-                <li><a href="#work">포트폴리오</a></li>
-                <li><a href="#license">자격증</a></li>
-                <li><a href="#contact">연락처</a></li>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#home" class="header__menu__item active">홈으로</a></li>
+                <li><a href="#about" class="header__menu__item">나</a></li>
+                <li><a href="#skills" class="header__menu__item">역량</a></li>
+                <li><a href="#work" class="header__menu__item">포트폴리오</a></li>
+                <li><a href="#license" class="header__menu__item">자격증</a></li>
+                <li><a href="#contact" class="header__menu__item">연락처</a></li>
             </ul>
         </nav>
      </header>
@@ -47,9 +47,9 @@
         </section>
 
         <!-- about -->
-        <section id="about">
-            <h2>건우</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum labore aperiam alias, fuga asperiores veniam, eum commodi vitae minus beatae voluptate dolorum iste necessitatibus aspernatur excepturi et accusamus mollitia temporibus?</p>
+        <section id="about" class="section max-container">
+            <h2 class="title">건우</h2>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum labore aperiam alias, fuga asperiores veniam, eum commodi vitae minus beatae voluptate dolorum iste necessitatibus aspernatur excepturi et accusamus mollitia temporibus?</p>
             <ul>
                 <li>
                     <i class="fa-brands fa-html5"></i>
@@ -79,9 +79,10 @@
         </section>
 
         <!-- skills -->
-        <section id="skills">
-            <h2>역량</h2>
-            <p>언어 및 도구</p>
+        <section id="skills" class="section">
+            <div class="max-container">
+            <h2 class="title">역량</h2>
+            <p class="description">언어 및 도구</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at harum quaerat. Magnam quasi dicta saepe molestias. Magnam, nobis nulla recusandae totam ratione esse sunt accusamus, ullam, rerum nisi doloremque.</p>
             <div>
                 <section>
@@ -123,12 +124,14 @@
                     </ul>
                 </section>
             </div>
+            </div>    
         </section>
 
         <!-- work -->
-        <section id="work">
-            <h2>포트폴리오</h2>
-            <p>Projects</p>
+        <section id="work" class="section">
+            <div class="max-container">
+            <h2 class="title">포트폴리오</h2>
+            <p class="description">Projects</p>
             <ul>
                 <li><button>ALL <span>10</span></button></li>
                 <li><button>Front-end <span>10</span></button></li>
@@ -209,12 +212,13 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- license -->
-        <section id="license">
-            <h2>자격증</h2>
-            <p>국가 기술 자격증</p>
+        <section id="license" class="section max-container">
+            <h2 class="title">자격증</h2>
+            <p class="description">국가 기술 자격증</p>
             <ul>
                 <li>
                     <img src="./images/license.jpg" alt="WSET">
@@ -250,11 +254,12 @@
             </a>
         </aside>
       </main>
-      
+
       <!-- Footer -->
-       <footer id="contact">
-            <h2>연락바랍니다.</h2>
-            <p>woorl201362@gmail.com</p>
+       <footer id="contact" class="section">
+            <div class="max-container"></div>
+            <h2 class="title">연락바랍니다.</h2>
+            <p class="description">woorl201362@gmail.com</p>
             <ul>
                 <li><a href="https://github.com/GGun-W" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="https://github.com/GGun-W" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
