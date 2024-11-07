@@ -93,6 +93,12 @@ button:focus {
         justify-content: space-between;
         align-items: center;
         z-index: 1;
+        transition: all 300ms ease;
+}
+
+.header--dark {
+        background-color: var(--color-primary);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
 }
 
 .header__logo {
@@ -110,13 +116,24 @@ button:focus {
         font-size: 1.8rem;
 }
 
+.header__toggle{
+        display: none;
+        color: var(--color-white);
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1.3rem;
+        right: 1rem;
+}
+
 .header__menu {
         display: flex;
         gap: 4px;
 }
 
 .header__menu__item {
+        display: block;
         padding: 8px 16px;
+        border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
@@ -133,7 +150,7 @@ button:focus {
 #home {
         background-color: var(--color-primary);
         color: var(--color-text);
-        padding: 7rem 1rem 5rem;
+        padding: 7rem 5rem 1rem;
         text-align: center;
 }
 
@@ -303,7 +320,7 @@ button:focus {
 .skills__etc {
         padding: 1rem;
         background-color: var(--color-primary);
-        filter: brightness(150%);
+        filter: blur(150%);
 }
 
 /* work */
@@ -387,7 +404,7 @@ button:focus {
         justify-content: center;
         align-items: center;
         transition: all 250ms ease-in;
-        transform: translateY(-10px);
+        transform: translateY(10px);
 }
 
 .project__metadata:hover {
@@ -454,6 +471,7 @@ button:focus {
         border-radius: 100%;
         text-align: center;
         box-shadow: 5px 5px 0px 0px var(--color-accent);
+        transition: opacity 350ms ease-in;
 }
 
 /* footer */
@@ -477,7 +495,7 @@ button:focus {
 .contact__link:hover {
         color: var(--color-accent);
 }
-
+        
 @media screen and (max-width: 768px) {
         .section {
                 padding: 3rem 2rem;
@@ -496,12 +514,20 @@ button:focus {
                 align-items: start;
         }
 
+        .header__toggle {
+                display: block;
+        }
 
         .header__menu {
+                display: none;
                 flex-direction: column;
                 text-align: center;
                 padding: 1rem 4rem;
                 gap: 1rem;
+        }
+
+        .header__menu.open {
+                display: flex;
         }
 
         .header__nav {
@@ -524,6 +550,9 @@ button:focus {
 
         .major {
                 max-width: 25rem;
+                width: 90%;
+                margin: 10px auto;
+                height: 15rem;
         }
 
         .job {
@@ -540,6 +569,7 @@ button:focus {
 
         .category {
                 width: 100%;
+                margin-bottom: 1px;
         }
 
         .projects {

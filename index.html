@@ -14,16 +14,17 @@
     <meta property="og:image" content="배포 후 생성된 이미지 URL">
 
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/39fc7581ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
-     <header class="header">
+    <header class="header">
         <div class="header__logo">
             <img class="header__logo__img" src="./images/smile.ico" alt="logo">
-            <h1 class="header__logo__title"><a href="#">Gunwoo</a></h1>
+            <h1 class="header__logo__title"><a 3zhref="#">Gunwoo</a></h1>
         </div>
         <nav class="header__nav">
             <ul class="header__menu">
@@ -35,15 +36,20 @@
                 <li><a href="#contact" class="header__menu__item">연락처</a></li>
             </ul>
         </nav>
-     </header>
-     <!-- Main -->
-      <main>
+        <button class="header__toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <!-- Main -->
+    <main>
         <!-- Home -->
         <section id="home">
-            <img class="home__avatar" src="./images/mee.jpg" alt="Gunwoo's profile">
-            <h2 class="home__title">안녕하세요 <br> <strong class="home__title--strong">건우</strong>입니다.</h2>
-            <p class="home__description">초보 개발자</p>
-            <a class="home__contact" href="#contact">연락처</a>
+            <div class="home__container">
+                <img class="home__avatar" src="./images/mee.jpg" alt="Gunwoo's profile">
+                <h2 class="home__title">안녕하세요 <br> <strong class="home__title--strong">건우</strong>입니다.</h2>
+                <p class="home__description">초보 개발자</p>
+                <a class="home__contact" href="#contact">연락처</a>
+            </div>    
         </section>
 
         <!-- about -->
@@ -149,7 +155,7 @@
             <div class="max-container">
             <h2 class="title">포트폴리오</h2>
             <p class="description">Projects</p>
-            <ul class="catrgories">
+            <ul class="categories">
                 <li><button class="category category--selected">ALL <span class="category__count">10</span></button></li>
                 <li><button class="category">Front-end <span class="category__count">5</span></button></li>
                 <li><button class="category">Mobile <span class="category__count">3</span></button></li>
@@ -270,10 +276,10 @@
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </aside>
-      </main>
+    </main>
 
-      <!-- Footer -->
-       <footer id="contact" class="section">
+    <!-- Footer -->
+    <footer id="contact" class="section">
             <div class="max-container"></div>
             <h2 class="title">연락바랍니다.</h2>
             <p class="description">woorl201362@gmail.com</p>
@@ -286,6 +292,6 @@
                 </li>
             </ul>
             <p>ⓒ Gunwoo - All rights reserved</p>
-       </footer>
+    </footer>
 </body>
 </html>
