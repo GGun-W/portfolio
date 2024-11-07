@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js" defer></script>
+    <script src="./js/projects.js" defer></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/39fc7581ae.js" crossorigin="anonymous"></script>
@@ -156,13 +157,13 @@
             <h2 class="title">포트폴리오</h2>
             <p class="description">Projects</p>
             <ul class="categories">
-                <li><button class="category category--selected">ALL <span class="category__count">10</span></button></li>
-                <li><button class="category">Front-end <span class="category__count">5</span></button></li>
-                <li><button class="category">Mobile <span class="category__count">3</span></button></li>
-                <li><button class="category">Back-end <span class="category__count">7</span></button></li>
+                <li><button class="category category--selected" data-category="all">ALL <span class="category__count">10</span></button></li>
+                <li><button class="category"  data-category="Front-end">Front-end <span class="category__count">5</span></button></li>
+                <li><button class="category" data-category="Mobile">Mobile <span class="category__count">3</span></button></li>
+                <li><button class="category" data-category="Back-end">Back-end <span class="category__count">7</span></button></li>
             </ul>
             <ul class="projects">
-                <li class="project">
+                <li class="project" data-type="Back-end">
                     <a href="#" target="_blank">
                         <img src="./images/angry.png" alt="project1" class="project__img">
                         <div class="project__metadata">
@@ -171,7 +172,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Front-end">
                     <a href="#" target="_blank">
                         <img src="./images/calm.png" alt="project1" class="project__img">
                         <div class="project__metadata">
@@ -180,7 +181,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Front-end">
                     <a href="#" target="_blank">
                         <img src="./images/happy.png" alt="project1" class="project__img">
                         <div class="project__metadata">
@@ -189,7 +190,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Mobile">
                     <a href="#" target="_blank">
                         <img src="./images/panic.png" alt="project1" class="project__img">
                         <div class="project__metadata">
@@ -198,7 +199,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Back-end">
                     <a href="#" target="_blank">
                         <img src="./images/smile.ico" alt="project1" class="project__img">
                         <div class="project__metadata">
@@ -207,7 +208,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Mobile">
                     <a href="#" target="_blank">
                         <img src="./images/tounge.png" alt="project1" class="project__img">
                         <div class="project__metadata">
@@ -216,7 +217,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Mobile">
                     <a href="#" target="_blank">
                         <img src="./images/surprised.png" alt="project1" class="project__img">
                         <div class="project__metadata">
@@ -225,7 +226,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="Mobile">
                     <a href="#" target="_blank">
                         <img src="./images/smile2.png" alt="project1" class="project__img">
                         <div class="project__metadata">
